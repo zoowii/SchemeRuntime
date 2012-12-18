@@ -1,4 +1,5 @@
-#pragma once
+#ifndef lexstate_h
+#define lexstate_h
 
 enum LexState
 {
@@ -15,3 +16,5 @@ enum LexState
     DONE_STRING,
     ERROR
 };
+
+#endif

@@ -1,3 +1,5 @@
+#ifndef strstream_h
+#define strstream_h
 #include "stdafx.h"
 
 class StrStream
@@ -17,3 +19,4 @@ public:
 	size_t remainingSize();
 };
 
+#endif

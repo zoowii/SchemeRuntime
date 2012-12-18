@@ -1,4 +1,5 @@
-#pragma once
+#ifndef tokentype_h
+#define tokentype_h
 
 #include "stdafx.h"
 
@@ -22,3 +23,5 @@ enum TokenType
     LIST,
     // PAIR
 };
+
+#endif

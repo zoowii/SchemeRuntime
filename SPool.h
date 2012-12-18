@@ -1,4 +1,5 @@
-#pragma once
+#ifndef spool_h
+#define spool_h
 #include "SFormItem.h"
 #include <set>
 
@@ -24,3 +25,4 @@ public:
 	void display() const;
 };
 
+#endif

@@ -1,4 +1,6 @@
-#pragma once
+#ifndef exception_h
+#define exception_h
+
 #include <string>
 using namespace std;
 
@@ -17,3 +19,4 @@ public:
 	}
 };
 
+#endif

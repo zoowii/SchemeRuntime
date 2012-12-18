@@ -1,4 +1,6 @@
-#pragma once
+#ifndef senv_h
+#define senv_h
+
 #include <map>
 #include "SFormItem.h"
 #include <set>
@@ -24,3 +26,4 @@ public:
 	void displayCurrent();
 };
 
+#endif

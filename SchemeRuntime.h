@@ -1,4 +1,6 @@
-#pragma once
+#ifndef schemeruntime_h
+#define schemeruntime_h
+
 #include "StrStream.h"
 #include "SEnv.h"
 #include "SPool.h"
@@ -48,3 +50,4 @@ public:
 	bool run();
 };
 
+#endif

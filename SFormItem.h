@@ -1,4 +1,5 @@
-#pragma once
+#ifndef sformitem_h
+#define sformitem_h
 
 #include "stdafx.h"
 #include "TokenType.h"
@@ -116,3 +117,4 @@ public:
 	virtual set<SFormItem*>* getItems() const;
 };
 
+#endif

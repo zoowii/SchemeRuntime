@@ -1,6 +1,6 @@
-ALL: ss
+All: ss
 ss: *.h *.cpp
-	g++ -o ss *.h *.cpp
+	g++ -o ss *.h *.cpp -Wall -std=c++0x -fpermissive
 
-clear:
+clean:
 	rm ss.exe || rm ss

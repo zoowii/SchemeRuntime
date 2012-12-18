@@ -1,4 +1,5 @@
-#pragma once
+#ifndef nativefunctype_h
+#define nativefunctype_h
 
 enum NativeFuncType
 {
@@ -26,3 +27,5 @@ enum NativeFuncType
 	NATIVE_FUNC_BIGGER,			// >
 	NATIVE_FUNC_BIGGER_OR_EQUAL // >=
 };
+
+#endif
