@@ -16,8 +16,11 @@ public:
 	SEnv(void);
 	SEnv(SEnv *parent);
 	virtual ~SEnv(void);
+	SFormItem *curProcess;
+	bool isLastStmt; // if current statement is the last one of the current process
 public:
 	void push(string name, SFormItem *item);
+	void clear();
 	SFormItem *find(string name);
 	SEnv* getParent();
 	void setParent(SEnv *parent);

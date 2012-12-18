@@ -104,10 +104,20 @@ SFormItem* SFormList::eval(SchemeRuntime *runtime) const
 {
 	SFormItem *result = NULL;
 	list<SFormItem *>::const_iterator it = this->forms->begin();
+	size_t size = this->forms->size(), i = 0;
 	while(it != this->forms->end())
 	{
+		bool savedLastStmtState = runtime->getEnv()->isLastStmt;
+		size_t diff = size - i;
+		if(diff == 1) { // the last statement, but the stmt may have param to be evaled, so still need judge if it's the last when eval the params
+			runtime->getEnv()->isLastStmt = true;
+		}
 		result = (*it)->eval(runtime);
-		it++;
+		if(diff == 1) {
+			runtime->getEnv()->isLastStmt = savedLastStmtState;
+		}
+		++it;
+		++i;
 	}
 	return result;
 }
